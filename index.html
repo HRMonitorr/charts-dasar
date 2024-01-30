@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Charts</title>
+</head>
+<body>
+  
+    <div class="charts-container">
+        <div class="chart">
+          <h2>Bar Chart</h2>
+          <canvas id="barChart" width="400" height="200"></canvas>
+        </div>
+    
+        <div class="chart">
+          <h2>Pie Chart</h2>
+          <canvas id="pieChart" width="400" height="200"></canvas>
+        </div>
+    
+        <div class="chart">
+          <h2>Line Chart</h2>
+          <canvas id="lineChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+</body>
+<!-- Import Library Js Charts.Js Website Resminnya di chartjs.org -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<!-- Import Js Chartnya dengan type module kenapa karna menggunakan fitur yang terbaru oleh javascript yaitu ES6+ yang dimana dengan fitur baru ini tidak membingungkan saat kompilasi code Javascript dengan file js yang lain-->
+
+<script type="module" src="bar.js"></script>
+<script type="module" src="line.js"></script>
+<script type="module" src="pie.js"></script>
+</html>
